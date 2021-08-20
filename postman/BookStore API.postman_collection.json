@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "98a683ff-e289-4adb-a90e-fbcb77a862d4",
+		"name": "BookStore API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:21021/api/Books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21021",
+					"path": [
+						"api",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:21021/api/Books/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21021",
+					"path": [
+						"api",
+						"Books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Book Title 3\",\r\n  \"description\": \"Book Description 3\",\r\n  \"authorName\": \"Author Name 3\",\r\n  \"price\": 20,\r\n  \"coverImageUrl\": \"Image URL 3\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:21021/api/Books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21021",
+					"path": [
+						"api",
+						"Books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3,\r\n  \"title\": \"Book Title 3 Changed\",\r\n  \"description\": \"Book Description 3 Changed\",\r\n  \"authorName\": \"Author Name 3 Changed\",\r\n  \"price\": 10,\r\n  \"coverImageUrl\": \"Image URL 3 Changed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:21021/api/Books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21021",
+					"path": [
+						"api",
+						"Books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:21021/api/Books/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "21021",
+					"path": [
+						"api",
+						"Books",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
